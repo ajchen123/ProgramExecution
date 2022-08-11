@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Program Execution</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link href="gameCreateStyle.css" rel="stylesheet" type="text/css" />
+  <script src="/gameCreateScript.js" defer></script>
+</head>
+
+<body>
+  <!-- Nav -->
+  <header class="header">
+    <!-- Title/Logo -->
+    <h1 class="logo"><a href="index.html">Program Execution</a></h1>
+    <ul class="main-nav">
+      <!-- Home Tab -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Game Tab -->
+      <li>
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <!-- Game Tab Drop Down -->
+            <a href="gamePlay.html"><span>Game</span></a>
+          </div>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <!-- Drop Down Options -->
+                <a id="playTab" href="gamePlay.html">Play</a>
+                <a id="createTab" href="gameCreate.html">Create</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Glossary Tab -->
+      <li><a href="glossary.html">Glossary</a></li>
+      <!-- Resources Tab -->
+      <li>
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <!-- Resource Tab Drop Down -->
+            <a href="resources.html"><span>Resources</span></a>
+          </div>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <!-- Drop Down Options -->
+                <a href="resources.html#opportunities">Opportunities</a>
+                <a href="resources.html#courses">Courses</a>
+                <a href="resources.html#books">Books</a>
+                <a href="resources.html#links">Links</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Contact Tab -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section id="create">
+    <div class="columns">
+      <div class="column">
+        <div class="leftside">
+          <h2 class="heading">CODE</h2>
+          <div class="tabs">
+            <ul>
+              <li id="current-tab" class="is-active"><a>Current</a></li>
+              <li id="combined-tab"><a>Combined</a></li>
+              <li id="html-tab"><a>HTML</a></li>
+              <li id="css-tab"><a>CSS</a></li>
+            </ul>
+          </div>
+          <textarea id="current-code" class="textarea" placeholder="Current Code" rows="17"></textarea>
+          <textarea id="combined-code" class="textarea is-hidden is-small" readonly placeholder="Combined Code"
+            rows="23"></textarea>
+          <textarea id="html-code" class="textarea is-hidden is-small" readonly placeholder="HTML Code" rows="23">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Program Execution</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+
+  <section id="game" class="game">
+    <section id="play" class="has-text-centered">
+      <div>
+        <br>
+        <h2>Hangman</h2>
+        <p>Clue: <span id="clue"></span></p>
+        <br><br>
+      </div>
+
+      <div>
+        <canvas id="canvas" width="300" height="200" style="border:1px dashed #000000;">
+        </canvas>
+      </div>
+      <br>
+
+      <div>
+        <ul class="word"></ul>
+      </div>
+
+      <div class="win is-hidden">
+        <div id="winClose" class="has-text-right">
+          <button class="button has-background-grey-light is-normal is-rounded ">&#10006;</button>
+        </div>
+        <br>
+        <h3>Congratulations!</h3>
+        <h5>You have guessed the secret word!<br>Click the button below to play again.</h5>
+        <br>
+        <div id="winAgain">
+          <button class="button has-background-grey-light is-normal"><strong>Play Again</strong></button>
+        </div>
+      </div>
+
+      <div class="lost is-hidden">
+        <div id="lostClose" class="has-text-right">
+          <button class="button has-background-grey-light is-normal is-rounded ">&#10006;</button>
+        </div>
+        <br>
+        <h3>Oh No!</h3>
+        <h5>You did not guess the secret word.<br>Click the button below to play again.</h5>
+        <br>
+        <div id="lostAgain">
+          <button class="button has-background-grey-light is-normal"><strong>Play Again</strong></button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</body>
+
+</html></textarea>
+          <textarea id="css-code" class="textarea is-hidden is-small" readonly placeholder="CSS Code" rows="23">html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+h2, h3, a {
+	color: #34495e;
+}
+
+.game {
+  background-color: #f7edb2;
+  width: 100%;
+  height: 100%;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+}
+
+.word > li {
+  padding: 30px;
+  font-size:40px;
+  font-weight: 700;
+  font-family: Impact, fantasy;
+  text-decoration: underline;
+}
+
+#play h2, #play p{
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+#play h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+canvas {
+  background-color: #f5f3e5;
+}
+
+.win, .lost {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e2c740;
+  border: 5px solid #999999;
+  padding: 10px 40px 30px 40px;
+}
+
+.win > h3, .lost > h3 {
+  font-family: Impact, fantasy;
+  font-size: 40px;
+}
+
+.win > h5, .lost > h5 {
+  font-family: sans-serif;
+  font-size: 25px;
+}</textarea>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="rightside">
+          <h2 class="heading">INFO</h2>
+          <section>
+            <div class="info-container">
+              <div id="navleft" class="info-item">
+                <p>&#10094;</p>
+              </div>
+              <div id="info-content" class="info-item">
+                <h2>Getting Started</h2>
+                <p>Welcome to creating Hangman! We will primarily be working with Java Script this module. Here are a
+                  few tips on how to navigate this page:</p>
+                <p class="shifted"><b>1.</b> Click the arrows on the left and right to progress through the module.<br>
+                  <b>2.</b> The tab "Current" on the left will display the portion of the code we are
+                  currently working on.<br>
+                  <b>3.</b> The tab "Combined" on the left will display all the code we have worked on so far. It will
+                  automatically update to the correct code as we progress through the module.<br>
+                  <b>4.</b> Write your code where &lt;YOUR CODE&gt; appears in the “Current Tab”.<br>
+                  <b>5.</b> The tabs "HTML" and “CSS” will show the HTML and CSS, respectively, for the game page.<br>
+                  <b>6.</b> Click the right arrow to get started!
+                </p>
+              </div>
+              <div id="navright" class="info-item">
+                <p>&#10095;</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!--     <section class="section is-small has-background-white"></section> -->
+  </section>
+</body>
+
+</html>

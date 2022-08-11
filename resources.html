@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Program Execution</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link href="resourcesStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <header class="header">
+    <!-- Title/Logo -->
+    <h1 class="logo"><a href="index.html">Program Execution</a></h1>
+    <ul class="main-nav">
+      <!-- Home Tab -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Game Tab -->
+      <li>
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <!-- Game Tab Drop Down -->
+            <a href="gamePlay.html"><span>Game</span></a>
+          </div>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <!-- Drop Down Options -->
+                <a id="playTab" href="gamePlay.html">Play</a>
+                <a id="createTab" href="gamePlay.html">Create</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Glossary Tab -->
+      <li><a href="glossary.html">Glossary</a></li>
+      <!-- Resources Tab -->
+      <li>
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <!-- Resource Tab Drop Down -->
+            <a href="resources.html"><span>Resources</span></a>
+          </div>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <!-- Drop Down Options -->
+                <a href="resources.html#opportunities">Opportunities</a>
+                <a href="resources.html#courses">Courses</a>
+                <a href="resources.html#books">Books</a>
+                <a href="resources.html#links">Links</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Contact Tab -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="resourceTab">
+    <!-- Opportunities Tab -->
+    <div>
+
+      <h1>
+        <a id="opportunities" href="#opportunities">Opportunities</a>
+      </h1>
+
+      <p>
+      <h2>Tech opportunities for first and second years:</h2>
+      <br>
+      <h3>Google STEP (Student Training in Engineering Program)</h3>
+      <a href="https://buildyourfuture.withgoogle.com/programs/step" target="_blank">Google STEP internship</a>
+      <br><br>
+      <h3>Path</h3>
+      <a href="https://www.palantir.com/careers/students/path/" target="_blank">Palantir Path internship</a>
+      <br><br>
+      <h3>UberSTAR</h3>
+      <a href="https://www.untapped.io/app/discover/jobs/uber/2022-uberstar-internship-program/13c3aa3c-01d4-4423-90fc-dd203222c02d?modal=signupCta"
+        target="_blank">Uber
+        internship</a>
+      <br><br>
+      <h3>Twitter University</h3>
+      <a href="https://careers.twitter.com/en/early-career.html" target="_blank">Twitter internship</a>
+      <br><br>
+      <h3>Meta University</h3>
+      <a href="https://www.metacareers.com/careerprograms/pathways/metauniversity" target="_blank">Meta internship</a>
+      <br><br>
+      <h3>Dropbox Launch</h3>
+      <a href="https://www.dropbox.com/jobs/teams/emerging-talent#open-positions" target="_blank">Dropbox internship</a>
+      <br><br>
+      <h3>Microsoft Explore</h3>
+      <a href="https://careers.microsoft.com/students/us/en/usexploremicrosoftprogram" target="_blank">Microsoft
+        internship</a>
+      <br><br>
+      <h3>SAP STAR</h3>
+      <a href="https://www.sap.com/about/careers/students-graduates/vocational-training/usa.html" target="_blank">SAP
+        STAR
+        internship</a>
+      <br><br>
+      </p>
+    </div>
+
+    <!-- Courses Tab -->
+    <div>
+
+      <h1> <a id="courses" href="#courses">Courses</a> </h1>
+
+      <p>
+      <h3>Google</h3>
+      <a href="https://grow.google/certificates/#?modal_active=none" target="_blank">Google Cetificates</a>
+      <br><br>
+      <h3>Harvard University-Computer Science Courses</h3>
+      <a href="https://pll.harvard.edu/subject/computer-science" target="_blank">Harvard Courses</a>
+      <br><br>
+      <h3>Stanford-Online Courses</h3>
+      <a href="https://online.stanford.edu/explore?type=All&free_or_paid[free]=free&school[1438]=1438"
+        target="_blank">Stanford
+        Courses</a>
+      <br><br>
+      <h3>Nvidia-Self-Paced Courses</h3>
+      <a href="https://www.nvidia.com/en-us/training/online/?ncid=pa-srch-goog-373662#cid=dli07_pa-srch-goog_en-us"
+        target="_blank">Nvidia
+        Courses</a>
+      <br><br>
+      <h3>Georgia Tech</h3>
+      <a href="https://www.edx.org/school/gtx" target="_blank">Georgia Tech</a>
+      <br><br>
+      <h3>Coursera</h3>
+      <a href="https://www.coursera.org/browse/computer-science" target="_blank">Coursera</a>
+      <br><br>
+      </p>
+    </div>
+
+    <!-- Books Tab -->
+    <div>
+
+      <h1> <a id="books" href="#books">Books</a> </h1>
+
+<!-- <!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Books Embedded Viewer API Example</title>
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script type="text/javascript">
+      google.books.load();
+
+      function initialize() {
+        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+        viewer.load('ISBN:9780132350884');
+      }
+
+      google.books.setOnLoadCallback(initialize);
+    </script>
+  </head>
+  <body>
+    <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
+  </body>
+</html> -->
+
+
+
+
+      
+      <p>
+      <h3>1.Cracking the Coding Interview by Gayle Laakmann McDowell</h3>
+      <br>
+      <h3>2.The Hidden Language of Computer Hardware and Software by Charles Petzold</h3>
+      <br>
+      <h3>3.A Handbook of Agile Software Craftsmanship by Robert C. Martin</h3>
+      <br>
+      <h3>4.A Practical Handbook of Software Construction by Steve McConnell</h3>
+      <br>
+      <h3>5.Algorithms by Robert Sedgewick & Kevin Wayne</h3>
+      <br>
+      <h3>6.Types and Programming Languages by Benjamin C. Pierce</h3>
+      <br>
+      <h3>7.The Linux Programming Interface By Michael Kerrisk</h3>
+      <br>
+      <h3>8.Advanced Programming in the UNIX Environment By W. Richard Stevens,Stephen A. Rago</h3>
+      <br>
+      </p>
+    </div>
+
+    <!-- Links Tab -->
+    <div>
+
+      <h1> <a id="links" href="#links">Links</a> </h1>
+
+      <p>
+      <h2> Practice by doing</h2>
+      <h4>Java and Python practice: </h4>
+      <a href="https://codingbat.com/java" target="_blank">Coding Bat </a>
+
+      <h4>Problems in multiple languages, rated by difficulty; when you solve or unlock a problem you can see other
+        peoples’
+        solutions:</h4>
+      <a href=" https://www.codewars.com/" target="_blank">Code Wars</a>
+
+      <br><br>
+      <h2> Algorithms</h2>
+      <h4> Practice problems and their solutions:</h4>
+      <a href="https://kingrayhan.medium.com/500-data-structures-and-algorithms-practice-problems-and-their-solutions-b45a83d803f0"
+        target="_blank">Data
+        structures and algorithms</a>
+      <br><br>
+      <h2> Web Tech</h2>
+      <h4>Tutorials and runnable, hackable examples of Java, p5, processing and more:</h4>
+      <a href="https://happycoding.io/" target="_blank">happy coding</a>
+      <br><br>
+      <h2>Interviewing</h2>
+      <h4>How to: Work at Google — Example Coding/Engineering Interview Video:</h4>
+      <a href="https://youtu.be/XKu_SEDAykw" target="_blank">Google Interview Video</a>
+      <br><br>
+      <h2>Open Source</h2>
+      <h4>Guides on contributing to open source and beginner-friendly projects:</h4>
+      <a href="https://www.firsttimersonly.com/" target="_blank">Beginner friendly projects</a>
+      <br><br>
+      </p>
+    </div>
+  </section>
+  <section class="section"></section>
+
+</body>
+
+</html>

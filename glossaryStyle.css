@@ -1,0 +1,90 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+/* Nav */
+.header {
+  display: flex;
+	justify-content: space-between;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-bottom: 2px solid #999999;
+	background-color: #e2c740;
+	border-radius: 0 0 10px 10px;
+}
+
+.main-nav {
+  display: flex;
+	margin-top: 5px;
+}
+
+h2, h3, a {
+	color: #34495e;
+}
+
+.logo {
+	font-size: 1.5em;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+/* Glossary Page */
+#glossary > h1 {
+  font-family: Impact, fantasy;
+  font-size: 50px;
+  padding: 5vw;
+}
+
+#glossary > h2 {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#glossary > p {
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 20px;
+  padding-left: 15vw;
+  padding-right: 10vw;
+}
+
+.top {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: #585656; 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 2rem; 
+  font-size: 18px; 
+}
+
+.hidden {
+  display: none;
+}

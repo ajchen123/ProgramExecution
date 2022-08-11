@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+/* Nav */
+.header {
+  display: flex;
+	justify-content: space-between;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-bottom: 2px solid #999999;
+	background-color: #e2c740;
+	border-radius: 0 0 10px 10px;
+}
+
+.main-nav {
+  display: flex;
+	margin-top: 5px;
+}
+
+h2, h3, a {
+	color: #34495e;
+}
+
+.logo {
+	font-size: 1.5em;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+ 
+#message {
+  color: red;
+  padding-left: 5vw;
+}
+
+.contact-container {
+  height: 65vh;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 5vw;
+}
+
+.inlineForm {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+input, .inlineForm button {
+  height: 7vh;
+} 
+
+#email-input {
+  width: 20vw;
+  padding-left: 2vw;
+  border: 2px solid #e2c740;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#question-input {
+  width: 70vw;
+  padding-left: 2vw;
+  border: 2px solid #e2c740;
+  border-radius: 5px 0 0 5px;
+}
+
+input:focus, textarea {
+    outline: none;
+}
+
+.inlineForm button {
+  width: 10vw;
+  background-color: #e2c740;
+  color: gray;
+  font-weight: 700;
+  border: 2px solid #e2c740;
+  border-radius: 0 5px 5px 0;
+} 
+
+.inlineForm button:hover {
+  background-color: #d7b614;
+  border: 2px solid #d7b614;
+} 
+
+.footer {
+  background-color: gray;
+  padding-bottom: 100px;
+}
+
+.footer > .content {
+  color: white;
+  font-weight: 500;
+}
+
+.content a {
+  color: #e2d89c;
+}
+
+.content b {
+  font-size: 18px;
+}
